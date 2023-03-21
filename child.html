@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!-- <button onclick="apChild()">ADD TAGS</button>
+    <script>
+        function apChild(){
+        var tag = document.createElement("h1")
+        tag.textContent ='DOM'
+        console.log(tag)
+        document.body.appendChild(tag)
+        tag.style.textAlign='center'
+        tag.style.background = 'greenyellow'
+        var div = document.createElement('div')
+        div.innerHTML = 'div created'
+        console.log(div)
+        document.body.appendChild(div)
+        div.style.border=' 2px dotted blue'
+        div.style.fontStyle = 'italic'
+        div.style.textAlign='center'
+        div.style.background='green'
+        }
+    </script> -->
+
+<!-- 
+
+<script>
+    var u = document.createElement('ul')
+    var l1 = document.createElement('li')
+    var l2 = document.createElement('li')
+    var l3 = document.createElement('li')
+    var l4 = document.createElement('li')
+    l1.textContent='JS'
+    l2.textContent='NODE'
+    l3.textContent='JAVA'
+    l4.textContent='REACT'
+    u.appendChild(l1)
+    u.appendChild(l2)
+    u.appendChild(l3)
+    u.appendChild(l4)
+    console.log(u)
+    document.body.appendChild(u)
+</script> -->
+
+<form action="http://127.0.0.1:5500/local%20storage/index.html" onsubmit="return login()">
+<label for="">USER NAME</label>
+<INPut type="text" id="input1"></INPut>
+<br><br>
+<label for="">PASSWORD</label>
+<INPut type="password" id="pass"></INPut>
+<br><br>
+<button >SUBMIT</button>
+</form>
+<script>
+    function  login(){
+        var name = document.getElementById('input1').value
+        var pass = document.getElementById('pass').value
+        if(name!="soumya"||name==null||name==""){
+            alert('wrong US NAME')
+            return false;
+        }
+        else if (pass!="sonu123"||pass.length<6){
+            alert('wrong PASSWORD')
+            return false;
+        }
+    }
+</script>
+</body>
+</html>

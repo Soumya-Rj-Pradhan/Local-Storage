@@ -1,0 +1,10 @@
+input, button 
+{
+    padding: 10px;
+    height: 30px;
+    color:;
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
